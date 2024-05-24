@@ -115,8 +115,8 @@ describe('Spread syntax에 대해 학습합니다.', function () {
       const order = `You ordered ${name} pizza with ${dough} dough and ${toppings.length} extra toppings!`;
       return order;
     }
-    expect(makePizza('original')).to.equal(FILL_ME_IN);
-    expect(makePizza('thin', 'pepperoni')).to.equal(FILL_ME_IN);
-    expect(makePizza('napoli', 'meat', 'extra cheese', 'onion', 'bacon')).to.equal(You ordered undefined pizza with original dough and 0 extra toppings!');
+    expect(makePizza('original')).to.equal('You ordered undefined pizza with original dough and 0 extra toppings!');
+    expect(makePizza('thin', 'pepperoni')).to.equal('You ordered pepperoni pizza with thin dough and 0 extra toppings!');
+    expect(makePizza('napoli', 'meat', 'extra cheese', 'onion', 'bacon')).to.equal('You ordered meat pizza with napoli dough and 3 extra toppings!');
   });
 });
